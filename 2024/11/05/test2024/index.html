@@ -240,6 +240,25 @@
 
 
 
+
+  <!-- 在此处插入 Gitalk 评论框代码 -->
+  <div id="gitalk-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css"></link>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: 'Iv23linpO6qQFK4nIUOR',   // 使用你自己的 client_id
+      clientSecret: 'ec8846adf23f20a813c4f6ef6e8cce5c238e02c0', // 使用你自己的 client_secret
+      repo: 'hexo-comments',             // GitHub 仓库名称
+      owner: 'ADLXZ',                    // GitHub 用户名
+      admin: ['ADLXZ'],                  // 管理员用户名
+      id: '2024/11/05/test2024/',            // 每篇文章唯一的标识
+      title: 'test2024',        // 页面标题
+      distractionFreeMode: true,         // 启用无干扰模式
+    });
+
+    gitalk.render('gitalk-container');  // 渲染评论框
+  </script>
 </div>
   </main>
 
